@@ -17,6 +17,13 @@ body {
   padding: 8rem 0;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
 .small-text {
   color: #5b5b5b;
   font-size: 14px;
