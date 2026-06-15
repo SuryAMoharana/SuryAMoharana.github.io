@@ -6,7 +6,6 @@ https://www.tooplate.com/view/2115-marvel
 
 */
 
-
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
 body {
   font-family: "Maven Pro", sans-serif;
@@ -54,7 +53,12 @@ p {
   color: #5b5b5b;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   letter-spacing: -1px;
 }
@@ -76,7 +80,8 @@ h3 {
 }
 
 h3,
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 
@@ -128,10 +133,10 @@ b, strong {
   color: #ffc200;
 }
 
-.about-icon a{
+.about-icon a {
   color: #0c0c0d;
   list-style: none;
-} 
+}
 .dark-mode .about-icon a {
   color: #ffffff;
 }
@@ -146,7 +151,6 @@ b, strong {
   margin: auto;
 }
 
-
 .animated-item {
   font-size: 35px;
   line-height: inherit;
@@ -159,10 +163,10 @@ b, strong {
   left: 0;
   animation: BottomTotop 6s linear infinite 0s;
 }
-.animated-item:nth-child(2n+2) {
+.animated-item:nth-child(2n + 2) {
   animation-delay: 2s;
 }
-.animated-item:nth-child(3n+3) {
+.animated-item:nth-child(3n + 3) {
   animation-delay: 4s;
 }
 
@@ -304,15 +308,15 @@ b, strong {
   right: 6px;
 }
 .color-mode-icon:after {
-  font-family: 'unicons';
-  content: '\ea9f';
+  font-family: "unicons";
+  content: "\ea9f";
   font-size: 30px;
   font-weight: 300;
   font-style: normal;
 }
 .color-mode-icon.active:after {
-  font-family: 'unicons';
-  content: '\eb65';
+  font-family: "unicons";
+  content: "\eb65";
   font-size: 30px;
   color: #ffffff;
 }
@@ -346,7 +350,12 @@ b, strong {
 }
 .dark-mode .feature-card .uil,
 .dark-mode .navbar-light .navbar-brand,
-.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
 .dark-mode .color-mode {
   color: #ffffff;
 }
@@ -415,27 +424,27 @@ b, strong {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  font-family: 'unicons';
+  font-family: "unicons";
   font-size: 100px;
   line-height: normal;
 }
 .owl-carousel .owl-nav .owl-prev:before {
-  content: '\e833';
+  content: "\e833";
   left: -45px;
 }
 .owl-carousel .owl-nav .owl-next:before {
-  content: '\e836';
+  content: "\e836";
   right: -45px;
 }
 
-.owl-theme .owl-nav [class*=owl-] {
+.owl-theme .owl-nav [class*="owl-"] {
   background: none;
   border-radius: 0;
   margin: 0;
   padding: 0;
   font-size: inherit;
 }
-.owl-theme .owl-nav [class*=owl-]:hover {
+.owl-theme .owl-nav [class*="owl-"]:hover {
   color: #ffc200;
 }
 .owl-theme .owl-dots .owl-dot {
@@ -445,7 +454,8 @@ b, strong {
   width: 8px;
   height: 8px;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
   background: #5b5b5b;
 }
 
@@ -467,7 +477,8 @@ b, strong {
 .contact-form .form-control:not(textarea) {
   height: 48px;
 }
-.contact-form .form-control:hover, .contact-form .form-control:focus {
+.contact-form .form-control:hover,
+.contact-form .form-control:focus {
   border-color: #ffc200;
 }
 .contact-form .submit-btn {
@@ -490,7 +501,8 @@ b, strong {
   bottom: 8px;
 }
 
-.contact-info p, .contact-info a {
+.contact-info p,
+.contact-info a {
   color: #f7f3f3;
 }
 
@@ -504,7 +516,6 @@ b, strong {
   color: #ffc200;
 }
 
-
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -517,12 +528,29 @@ b, strong {
   background: #fff;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
 }
-.dark-mode .services .icon-box {
-  background: #0c0c0d;
-  
+
+/* Vertical center skill items in carousel */
+.owl-carousel .item {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
 }
 
-.dark-mode .services .icon-box h4 > a{
+.owl-carousel .item .services {
+  width: 100%;
+}
+
+.services .row {
+  justify-content: center;
+}
+
+.dark-mode .services .icon-box {
+  background: #0c0c0d;
+}
+
+.dark-mode .services .icon-box h4 > a {
   color: #ffffff;
 }
 
@@ -597,9 +625,6 @@ b, strong {
   color: white;
 }
 
-
-
-
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
     position: relative;
@@ -657,12 +682,11 @@ b, strong {
   .dark-mode .navbar-toggler-icon {
     background: #ffffff;
   }
-
 }
 @media (max-width: 580px) {
-	.animated-info {
-		min-width: 200px;
-	}
+  .animated-info {
+    min-width: 200px;
+  }
   .animated-item {
     font-size: 30px;
   }
@@ -699,7 +723,6 @@ b, strong {
   .dark-mode .navbar-toggler-icon {
     background: #ffffff;
   }
-
 }
 @media (max-width: 320px) {
   .animated-text {
@@ -741,5 +764,4 @@ b, strong {
   .dark-mode .navbar-toggler-icon {
     background: #ffffff;
   }
-
 }
